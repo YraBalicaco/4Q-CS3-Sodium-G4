@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Pics 1 Word Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        #game-container {
+            text-align: center;
+        }
+
+        #images-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #images-container img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #next {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>4 Pics 1 Word</h1>
+        <div id="images-container">
+            <img id="img1" src="" alt="image 1">
+            <img id="img2" src="" alt="image 2">
+            <img id="img3" src="" alt="image 3">
+            <img id="img4" src="" alt="image 4">
+        </div>
+        <input type="text" id="guess" placeholder="Enter word" />
+        <button id="submit">Submit</button>
+        <div id="message"></div>
+        <button id="next" style="display: none;">Next Level</button>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
